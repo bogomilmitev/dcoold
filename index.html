@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="CREA8RS.COM - The most precious component of your marketing">
+        <title>CREA8RS</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+
+        <!-- js -->
+		<script src="js/classie.js"></script>
+		<script>
+			function init() {
+				window.addEventListener('scroll', function(e){
+					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+						shrinkOn = 100,
+						header = document.querySelector("header");
+					if (distanceY > shrinkOn) {
+						classie.add(header,"smaller");
+					} else {
+						if (classie.has(header,"smaller")) {
+							classie.remove(header,"smaller");
+						}
+					}
+				});
+			}
+			window.onload = init();
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="container clearfix">
+				<h1 id="logo">
+					LOGO
+				</h1>
+				<nav>
+					<a href="#">Lorem</a>
+					<a href="#">Ipsum</a>
+					<a href="#">Dolor</a>
+				</nav>
+			</div>
+		</header>
+		<!-- /header -->
+
+		<div class="parallax"></div>
+
+		<div class="services">
+			<div class="service-1">
+			   <a href="#parallax"><i class="fa fa-pencil"></i></a>
+			</div>
+			<div class="service-2"></div>
+			<div class="service-3"></div>
+			<div class="service-4"></div>
+		</div>
+
+		<footer>
+			<p>&copy; CREA8RS.COM 2017</p>
+		</footer>
+	</body>
+</html>
+
